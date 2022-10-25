@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <section id="login">
+        <div id="formForAll">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <div class="red dnone" id="span-donone">Yanlış Username və ya Password</div>
+            <button id="sbmt-btn">Login</button>
+        </div>
+    </section>
+
+
+
+
+
+
+    <main id="all">
+        <!-- Input start -->
+        <section id="input">
+            <div class="container">
+                <div class="enter-data">
+                    <div class="col-3">
+                        <input type="text" placeholder="Product Name" name="product-name" id="product-name">
+                    </div>
+                    <div class="col-3">
+                        <input type="number" placeholder="Product Price" name="product-price" id="product-price">
+                    </div>
+                    <div class="col-3">
+                        <input type="number" placeholder="Product Count" name="product-count" id="product-count">
+                    </div>
+                    <div class="col-3">
+                        <select name="categories" id="categories">
+                            <option disabled selected value> -- categories -- </option>>
+                            <option value="meiset">Məişət</option>
+                            <option value="mebel">Mebel</option>
+                            <option value="elektronika">Elektronika</option>
+                            <option value="usaq">Uşaq və Əyləncə</option>
+                            <option value="geyim">Geyim</option>
+                            <option value="qida">Qida</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="accept">
+                    <div class="accept-button">
+                        <button id="accept-input"> Create </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Input  end -->
+
+
+
+
+
+        <!-- Product Table start -->
+
+        <section id="product-table">
+            <div class="container" id="insider">
+                <div class="table-head">
+                    <p>Filter</p>
+                    <div class="col-3 filter-by-price">
+                        <input type="number" placeholder="min" name="min-price" id="min-price"
+                            class="price-filter-input">
+                        <input type="number" placeholder="max" name="max-price" id="max-price"
+                            class="price-filter-input">
+                    </div>
+
+                    <div class="col-3 filter-by-category">
+                        <select name="categories" id="categories">
+                            <option disabled selected value> -- categories -- </option>>
+                            <option value="meiset">Məişət</option>
+                            <option value="mebel">Mebel</option>
+                            <option value="elektronika">Elektronika</option>
+                            <option value="usaq">Uşaq və Əyləncə</option>
+                            <option value="geyim">Geyim</option>
+                            <option value="qida">Qida</option>
+                        </select>
+                    </div>
+
+                    <div class="col-3 sort-products">
+                        <button id="a-z" class="sort-button"> A-Z </button>
+                        <button id="z-a" class="sort-button"> Z-A </button>
+                    </div>
+
+                    <div class="col-3 search-product">
+                        <input type="text" placeholder="search" name="search" id="search">
+                    </div>
+
+
+                    <div class="find-filter-sort">
+                        <div class="filt">
+                            <button id="filter-btn-1">Filter</button>
+                            <button id="filter-btn-2">Filter</button>
+                        </div>
+                        <button id="find-btn">Find</button>
+                    </div>
+                </div>
+
+
+                <div class="table-main" id="table-base">
+                    <div class="products-header" id="head-for-delete">
+                        <div class="col-3 pr-name">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="col-3 pr-price">
+                            <p>Product Price</p>
+                        </div>
+                        <div class="col-3 pr-count">
+                            <p>Product Count</p>
+                        </div>
+                        <div class="col-3 pr-category">
+                            <p>Product Category</p>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Product Table end -->
+    </main>
+</body>
+
+</html>
